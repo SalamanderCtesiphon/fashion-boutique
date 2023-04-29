@@ -6,6 +6,18 @@
   width: 100vw;
 }
 
+.navLinks {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 26px;
+}
+
+.navLinks:hover {
+  color: gray;
+}
+
 .home-page {
   display: flex;
   flex-direction: column;
@@ -27,8 +39,16 @@
   color: black;
 }
 
+.shop-link:hover {
+  color: white;
+}
+
 .link {
   text-decoration: none;
   color: white;
   cursor: pointer;
+}
+
+.link:hover {
+  color: gray;
 }

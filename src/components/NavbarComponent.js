@@ -16,7 +16,7 @@ function NavbarComponent() {
   return (
     <>
       <Navbar  bg='dark' variant='dark'>
-        <Navbar.Brand href='/'>Fashion Apparel</Navbar.Brand>
+        <a className="navLinks" href='/'>Fashion Apparel</a>
         <Navbar.Toggle />
         <Navbar.Collapse className='justify-content-end'>
           <Button onClick={handleShow} bg='dark' variant='dark'>Cart {productsCount} Items</Button>
