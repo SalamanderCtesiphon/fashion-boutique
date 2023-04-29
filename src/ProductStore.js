@@ -16,7 +16,7 @@ const productsArray = [
   }
 ]
 
-function getProductDate(id) {
+function getProductData(id) {
   let productData = productsArray.find(product => product.id === id)
 
   if(productData === undefined) {
@@ -26,4 +26,4 @@ function getProductDate(id) {
   return productData
 }
 
-export { productsArray, getProductDate }
+export { productsArray, getProductData }
