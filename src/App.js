@@ -13,7 +13,7 @@ function App() {
   return (
     <div className='App'>
       <CartProvider>
-        <Container>
+        <Container >
           <NavbarComponent></NavbarComponent>
           <BrowserRouter>
             <Routes>

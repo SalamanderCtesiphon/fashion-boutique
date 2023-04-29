@@ -26,9 +26,9 @@ function NavbarComponent() {
       </Navbar>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Shopping Cart</Modal.Title>
+          <Modal.Title >Shopping Cart</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body >
           {productsCount > 0 ?
             <>
               <p>Items in your cart:</p>

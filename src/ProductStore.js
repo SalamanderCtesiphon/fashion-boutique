@@ -1,18 +1,25 @@
+import tShirts from './images/md-salman-tWOz2_EK5EQ-unsplash.jpg'
+import shoes from './images/pexels-andre-moura-2562992.jpg'
+import dressShirt from './images/nimble-made-N0ke5zChVBU-unsplash(1).jpg'
+
 const productsArray = [
   {
     id: '1',
-    title: 'Coffee',
-    price: 4.99
+    title: 'T-Shirts',
+    price: 14.99, 
+    image: tShirts
   },
   {
     id: '2',
-    title: 'Sunglasses',
-    price: 9.99
+    title: 'Shoes',
+    price: 109.99,
+    image: shoes
   },
   {
     id: '3',
-    title: 'Camera',
-    price: 39.99
+    title: 'Dress Shirt',
+    price: 39.99,
+    image: dressShirt
   }
 ]
 
