@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className='home-page'>
       <h1 className='title-header'>Fashion Apparel</h1>
-      <a href='/' className='shop-link' >Shop</a>
+      <a href='/categories' className='shop-link' >Shop</a>
     </div>
   )
 }

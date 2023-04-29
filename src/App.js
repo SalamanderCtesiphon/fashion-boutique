@@ -8,6 +8,7 @@ import Store from './pages/Store';
 import Success from './pages/Success';
 import CartProvider from './CartContext';
 import Home from './pages/Home';
+import Categories from './components/Categories';
 
 function App() {
   return (
@@ -17,10 +18,11 @@ function App() {
           <NavbarComponent></NavbarComponent>
           <BrowserRouter>
             <Routes>
-              <Route index element={<Store />} />
+              <Route index element={<Home />} />
               <Route path='success' element={<Success />} />
               <Route path='cancel' element={<Cancel />} />
-              <Route path='home' element={<Home />} />
+              <Route path='home' element={<Store />} />
+              <Route path='categories' element={<Categories />} />
             </Routes>
           </BrowserRouter>
         </Container>
