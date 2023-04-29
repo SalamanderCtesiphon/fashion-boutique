@@ -15,12 +15,14 @@ function NavbarComponent() {
 
   return (
     <>
-      <Navbar expand='sm'>
-        <Navbar.Brand href='/'>Ecommerce Store</Navbar.Brand>
+      <Navbar expand='lg' bg='dark' variant='dark'>
+        <Navbar.Brand href='/'>Fashion Apparel</Navbar.Brand>
         <Navbar.Toggle />
+        <a href='/home' className='link' >Home</a>
         <Navbar.Collapse className='justify-content-end'>
-          <Button onClick={handleShow}>Cart {productsCount} Items</Button>
+          <Button onClick={handleShow} bg='dark' variant='dark'>Cart {productsCount} Items</Button>
         </Navbar.Collapse>
+        
       </Navbar>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
