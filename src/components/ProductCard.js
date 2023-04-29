@@ -9,7 +9,7 @@ function ProductCard(props) {
   const productQuantity = cart.getProductQuantity(product.id)
 
   return (
-    <Card>
+    <Card bg='dark' variant='dark'>
       <Card.Body>
         <Card.Title>{product.title}</Card.Title>
         <Card.Text>${product.price}</Card.Text>
@@ -25,7 +25,7 @@ function ProductCard(props) {
           <Button variant='danger' onClick={() => cart.deleteFromCart(product.id)} className='my-2'>Remove From Cart</Button>
         </>
         :
-        <Button variant='primary' onClick={() => cart.addOneToCart(product.id)} >Add To Cart</Button>
+        <Button vbg='dark' variant='dark' onClick={() => cart.addOneToCart(product.id)} >Add To Cart</Button>
         } 
         </Card.Body>
     </Card>
