@@ -9,6 +9,9 @@ import Success from './pages/Success';
 import CartProvider from './CartContext';
 import Home from './pages/Home';
 import Categories from './pages/Categories';
+import Shirts from './pages/Shirts';
+import Pants from './pages/Pants';
+import Shoes from './pages/Shoes';
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
               <Route path='cancel' element={<Cancel />} />
               <Route path='home' element={<Store />} />
               <Route path='categories' element={<Categories />} />
+              <Route path='shirts' element={<Shirts />} />
+              <Route path='pants' element={<Pants />} />
+              <Route path='shoes' element={<Shoes />} />
             </Routes>
           </BrowserRouter>
         </Container>
