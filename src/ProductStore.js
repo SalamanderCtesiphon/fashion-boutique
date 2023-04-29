@@ -26,4 +26,4 @@ function getProductDate(id) {
   return productData
 }
 
-export { productsArray }
+export { productsArray, getProductDate }
