@@ -3,7 +3,6 @@ import { Button, Navbar, Modal} from 'react-bootstrap'
 import { CartContext } from '../CartContext'
 import CartProduct from './CartProduct'
 
-
 function NavbarComponent() {
   const cart = useContext(CartContext)
 
@@ -12,6 +11,7 @@ function NavbarComponent() {
   const handleShow = () => setShow(true)
 
   const productsCount = cart.items.length
+
 
   return (
     <>

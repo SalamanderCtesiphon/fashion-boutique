@@ -8,6 +8,7 @@ function Shoes() {
     return product.category === "footware"
   })
 
+
   return (
     <>
       <h1 align='center' className='p-3' >Welcome to the Shoe Department</h1>
