@@ -18,10 +18,16 @@ function CartProduct(props) {
   return (
     <>
       <div className='checkout-card'>
-        <h3>{productData.title}</h3>
-        <p>{quantity} total</p>
+        <img src={productData.image} alt="product" className='checkout-image'></img>
+        <div className='cc-sub-section'>
+          <div>Product Name:</div>
+          <h3>{productData.title}</h3>
+        </div>
+        <div className='cc-sub-section-two'>
+          <p>total:  {quantity}</p>
+        </div>
         <p>{ USDollar.format(subTotal)}</p>
-        <div onClick={() => cart.deleteFromCart(id)}>Remove</div>
+        <button className="dlt-btn" onClick={() => cart.deleteFromCart(id)}>Remove</button>
       </div>
     </>
   )

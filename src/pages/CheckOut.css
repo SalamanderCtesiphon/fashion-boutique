@@ -1,3 +1,67 @@
+.checkout-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-head {
+  min-width: 500px;
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#link-back {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
 .checkout-card {
-  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 500px;
+  width: 50vw;
+  padding: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.451);
+}
+
+.checkout-image {
+  height: 100px;
+  width: 75px;
+  object-fit: cover;
+  margin-right: 50px;
+}
+
+.cc-sub-section {
+  height: auto;
+}
+
+.cc-sub-section-two {
+  
+}
+
+.dlt-btn {
+  border: 1px solid red;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.dlt-btn:hover {
+  background-color: rgba(255, 0, 0, 0.384);
+  color: black;
+}
+
+.buy-btn {
+  border: 1px solid rgba(0, 128, 0, 0.339);
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buy-btn:hover {
+  background-color: rgba(0, 128, 0, 0.208);
 }
