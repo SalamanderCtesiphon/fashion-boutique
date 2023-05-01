@@ -1,6 +1,10 @@
 import React, { useContext} from 'react'
 import { CartContext } from '../CartContext'
 import '../pages/Shirts.css'
+import Icon from '@mdi/react';
+import { mdiClose } from '@mdi/js';
+
+
 
 
 function ProductCard(props) {
@@ -11,17 +15,23 @@ function ProductCard(props) {
   return (
 
     <div className='product-card'>
+      { productQuantity > 0 ?
+        <Icon className="close-icon" path={mdiClose} size={2} onClick={() => cart.deleteFromCart(product.id)}/>   
+        :
+        <></>
+      }
       <img src={product.image} alt='product' className='product-image'></img>
       <h3>{product.title}</h3>
       <p>${product.price}</p>
       { productQuantity > 0 ?
         <>
-          <button onClick={() => cart.removeOneFromCart(product.id)} >-</button>
-          <div>
-            In cart: {productQuantity}
+          <div className='adjust-item'>
+            <button onClick={() => cart.removeOneFromCart(product.id)} >-</button>
+            <div>
+              In cart: {productQuantity}
+            </div>
+            <button onClick={() => cart.addOneToCart(product.id)} >+</button>
           </div>
-          <button onClick={() => cart.addOneToCart(product.id)} >+</button>
-          <button onClick={() => cart.deleteFromCart(product.id)} >Delete</button>
         </> 
         :
         <>

@@ -1,11 +1,37 @@
 .shirt-department {
+  width: 100vw;
+  height: auto;
+}
+
+.department-page {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr) ) ;
   min-height: 100vh;
   width: 100vw;
 }
 
-.product-cart {
-  height: 20vh;
+.product-card {
+  position: relative;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.product-image {
+  height: 500px;
+  width: 360px;
+}
+
+.close-icon {
+  position: absolute;
+  right: 1%;
+}
+
+.adjust-item {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
 }
