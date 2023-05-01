@@ -19,7 +19,7 @@ function NavbarComponent() {
         <a className="navLinks" href='/'>Fashion Apparel</a>
         <Navbar.Toggle />
         <Navbar.Collapse className='justify-content-end'>
-          <Button onClick={handleShow} bg='dark' variant='dark'>Cart {productsCount} Items</Button>
+          <a className="navLinks" href='checkout'>{productsCount} items in cart</a>
         </Navbar.Collapse>
         
       </Navbar>

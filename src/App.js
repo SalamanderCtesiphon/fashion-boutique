@@ -12,6 +12,7 @@ import Categories from './pages/Categories';
 import Shirts from './pages/Shirts';
 import Pants from './pages/Pants';
 import Shoes from './pages/Shoes';
+import CheckOut from './pages/CheckOut';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
               <Route path='shirts' element={<Shirts />} />
               <Route path='pants' element={<Pants />} />
               <Route path='shoes' element={<Shoes />} />
+              <Route path='checkout' element={<CheckOut />} />
             </Routes>
           </BrowserRouter>
         </Container>
