@@ -14,10 +14,15 @@ function NavbarComponent() {
     <>
       <div className='header'>
       <a className="navLinks title" href='/'>Fashion Apparel</a>
-      <form id='search'>
-        <input></input>
+      <div id='search' >
+        <input onChange={() => console.log('hi')}></input>
         <button>seacrch</button>
-      </form>
+        <div className='drop-down'>
+          <a className='list-item' href='/shoes'>Shoes</a>
+          <a className='list-item' href='/shirts'>Shirts</a>
+          <a className='list-item' href='/pants'>Pants</a>
+        </div>
+      </div>
       <div className='shopping-cart'>
         { productsCount > 0 ? 
           <div className='product-count'>{productsCount}</div>

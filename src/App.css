@@ -7,9 +7,43 @@
   justify-content: space-between;
 }
 
+#search {
+  border: 2px solid rgba(103, 102, 102, 0.48);
+  border-radius: 15px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.drop-down {
+  position: absolute;
+  top: 100%;
+  right: 30%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.list-item {
+  text-decoration: none;
+  background-color: rgba(128, 128, 128, 0.474);
+  border: 1px solid black;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  width: 200px;
+}
+
+.list-item:hover {
+  background-color: white;
+  color: black;
+}
+
 .title {
   padding-left: 10px;
 }
+
 button {
   border: white;
   border-radius: 20%;
@@ -27,13 +61,6 @@ input {
   background-color: rgba(235, 235, 235, 0.188);
 }
 
-form {
-  border: 2px solid rgba(103, 102, 102, 0.48);
-  border-radius: 15px;
-  padding: 4px;
-  display: flex;
-  align-items: center;
-}
 
 .header {
   height: auto;
