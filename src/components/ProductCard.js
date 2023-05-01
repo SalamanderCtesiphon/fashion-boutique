@@ -1,5 +1,6 @@
 import React, { useContext} from 'react'
 import { CartContext } from '../CartContext'
+import '../pages/Shirts.css'
 
 
 function ProductCard(props) {
@@ -10,7 +11,7 @@ function ProductCard(props) {
   return (
 
     <div className='product-card'>
-      <img src={product.image} alt='product'></img>
+      <img src={product.image} alt='product' className='product-image'></img>
       <h3>{product.title}</h3>
       <p>${product.price}</p>
       { productQuantity > 0 ?

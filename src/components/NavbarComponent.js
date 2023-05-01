@@ -24,7 +24,7 @@ function NavbarComponent() {
           :
           <></>
         }
-        <a className="navLinks" href='checkout'><Icon path={mdiCart} size={1.7} /></a>
+        <a className="navLinks" href='checkout'><Icon path={mdiCart} size={1.5} /></a>
       </div>
        </div>
     </>

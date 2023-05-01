@@ -1,0 +1,11 @@
+.shirt-department {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.product-cart {
+  height: 20vh;
+}
