@@ -9,8 +9,17 @@
   width: 100vw;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
+@media (max-width: 700px) {
+  form{
+    display: none;
+  }
+}
 
 
 .navLinks {

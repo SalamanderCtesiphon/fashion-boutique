@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { Button } from 'react-bootstrap'
 import { CartContext } from '../CartContext'
 import CartProduct from '../components/CartProduct'

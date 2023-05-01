@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cancel from './pages/Cancel';
 import Store from './pages/Store';
 import Success from './pages/Success';
-import CartProvider, { CartContext } from './CartContext';
+import CartProvider from './CartContext';
 import Home from './pages/Home';
 import Categories from './pages/Categories';
 import Shirts from './pages/Shirts';
