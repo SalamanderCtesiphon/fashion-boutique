@@ -9,28 +9,26 @@ function ProductCard(props) {
   const productQuantity = cart.getProductQuantity(product.id)
 
   return (
-    <Card bg='dark' variant='dark'>
-      <Card.Body>
-        <Card.Img variant='top'style={{height: '500px', objectFit: 'cover',
-          backgroundPosition: 'center' }} src={product.image}></Card.Img>
-        <Card.Title>{product.title}</Card.Title>
-        <Card.Text>${product.price}</Card.Text>
-        { productQuantity > 0 ? 
+
+    <div className='product-card'>
+      <img src={product.image}></img>
+      <h3>{product.title}</h3>
+      <p>${product.price}</p>
+      { productQuantity > 0 ?
         <>
-          <Form as={Row}>
-            <Form.Label column="true" sm="6">In Cart: {productQuantity}</Form.Label>
-            <Col sm="6">
-              <Button sm="6" bg='dark' variant='dark' onClick={() => cart.addOneToCart(product.id)} className='mx-2'>+</Button>
-              <Button sm="6" bg='dark' variant='dark' onClick={() => cart.removeOneFromCart(product.id)} className='mx-2'>-</Button>
-            </Col>
-          </Form>
-          <Button bg='dark' variant='dark' onClick={() => cart.deleteFromCart(product.id)} className='my-2'>Remove From Cart</Button>
-        </>
+          <button onClick={() => cart.removeOneFromCart(product.id)} >-</button>
+          <div>
+            In cart: {productQuantity}
+          </div>
+          <button onClick={() => cart.addOneToCart(product.id)} >+</button>
+          <button onClick={() => cart.deleteFromCart(product.id)} >Delete</button>
+        </> 
         :
-        <Button vbg='dark' variant='dark' onClick={() => cart.addOneToCart(product.id)} >Add To Cart</Button>
-        } 
-        </Card.Body>
-    </Card>
+        <>
+         <button onClick={() => cart.addOneToCart(product.id)} >Add One to Cart</button>
+        </>
+      }
+    </div>
   )
 }
 
