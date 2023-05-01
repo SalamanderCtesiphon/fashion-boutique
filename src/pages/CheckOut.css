@@ -17,6 +17,17 @@
   text-decoration: none;
   color: black;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+  padding: 4px;
+}
+
+#link-back:hover {
+  color: gray;
+  background-color: rgba(128, 128, 128, 0.29);
+  border-radius: 20px;
 }
 
 .checkout-card {
@@ -38,6 +49,7 @@
 
 .cc-sub-section {
   height: auto;
+  width: 150px;
 }
 
 .cc-sub-section-two {
@@ -64,4 +76,8 @@
 
 .buy-btn:hover {
   background-color: rgba(0, 128, 0, 0.208);
+}
+
+.total {
+  padding: 20px;
 }

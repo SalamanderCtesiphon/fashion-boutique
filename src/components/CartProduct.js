@@ -26,7 +26,10 @@ function CartProduct(props) {
         <div className='cc-sub-section-two'>
           <p>total:  {quantity}</p>
         </div>
-        <p>{ USDollar.format(subTotal)}</p>
+        <div className='cc-sub-section-three'>
+          <div>Sub Total:</div>
+          <p>{ USDollar.format(subTotal)}</p>
+        </div>
         <button className="dlt-btn" onClick={() => cart.deleteFromCart(id)}>Remove</button>
       </div>
     </>
