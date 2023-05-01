@@ -1,5 +1,9 @@
 import React, { useContext} from 'react'
 import { CartContext } from '../CartContext'
+import Icon from '@mdi/react';
+import { mdiCart } from '@mdi/js';
+
+
 
 function NavbarComponent() {
   const cart = useContext(CartContext)
@@ -9,13 +13,20 @@ function NavbarComponent() {
   return (
     <>
       <div className='header'>
-      <a className="navLinks" href='/'>Fashion Apparel</a>
+      <a className="navLinks title" href='/'>Fashion Apparel</a>
       <form id='search'>
         <input></input>
         <button>seacrch</button>
       </form>
-      <a className="navLinks" href='checkout'>{productsCount} items in cart</a>
+      <div className='shopping-cart'>
+        { productsCount > 0 ? 
+          <div className='product-count'>{productsCount}</div>
+          :
+          <></>
+        }
+        <a className="navLinks" href='checkout'><Icon path={mdiCart} size={1.7} /></a>
       </div>
+       </div>
     </>
   )
 }
