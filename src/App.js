@@ -12,6 +12,7 @@ import Shirts from './pages/Shirts';
 import Pants from './pages/Pants';
 import Shoes from './pages/Shoes';
 import CheckOut from './pages/CheckOut';
+import Footer from './pages/Footer';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </CartProvider>
+      <Footer />
     </div>
   );
 }
