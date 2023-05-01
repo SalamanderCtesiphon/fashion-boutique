@@ -4,7 +4,7 @@ import './Categories.css'
 function Categories() {
   return (
     <div className='category-page'>
-      <h3>Categories</h3>
+      <h3>Shop Categories:</h3>
       <div className='category-display'>
         <div className='category-card'>
           <div id='shirts'></div>

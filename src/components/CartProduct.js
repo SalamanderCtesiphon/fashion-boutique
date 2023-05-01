@@ -8,13 +8,21 @@ function CartProduct(props) {
   const quantity = props.quantity
   const productData = getProductData(id)
 
+  let USDollar = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  });
+
+  let subTotal = (quantity * productData.price).toFixed(2) 
+
   return (
     <>
-      <h3>{productData.title}</h3>
-      <p>{quantity} total</p>
-      <p>${ (quantity * productData.price).toFixed(2) }</p>
-      <div onClick={() => cart.deleteFromCart(id)}>Remove</div>
-      <hr></hr>
+      <div className='checkout-card'>
+        <h3>{productData.title}</h3>
+        <p>{quantity} total</p>
+        <p>{ USDollar.format(subTotal)}</p>
+        <div onClick={() => cart.deleteFromCart(id)}>Remove</div>
+      </div>
     </>
   )
 }

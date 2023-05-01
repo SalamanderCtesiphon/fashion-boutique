@@ -64,3 +64,18 @@
     flex-direction: column;
   }
 }
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.208);
+  height: 30px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.nav-link:hover{
+  background-color: rgba(0, 128, 0, 0.128);
+}
