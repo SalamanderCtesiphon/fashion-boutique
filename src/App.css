@@ -1,14 +1,21 @@
 .App {
   text-align: center;
-  background-color: black;
-  color: white;
   min-height: 100vh;
   width: 100vw;
 }
 
+.header {
+  height: auto;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
 .navLinks {
   text-decoration: none;
-  color: white;
+  color: black;
   cursor: pointer;
   margin-left: 10px;
   font-size: 26px;
