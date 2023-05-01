@@ -19,9 +19,9 @@ function CheckOut() {
 
               <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
 
-              <Button variant='success'>
+              <div>
                 Purchase Items!
-              </Button>
+              </div>
             </>
           :
           <>
