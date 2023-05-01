@@ -26,11 +26,11 @@ function ProductCard(props) {
       { productQuantity > 0 ?
         <>
           <div className='adjust-item'>
-            <button onClick={() => cart.removeOneFromCart(product.id)} >-</button>
+            <div className='increment' onClick={() => cart.removeOneFromCart(product.id)} >-</div>
             <div>
               In cart: {productQuantity}
             </div>
-            <button onClick={() => cart.addOneToCart(product.id)} >+</button>
+            <div className='increment' onClick={() => cart.addOneToCart(product.id)} >+</div>
           </div>
         </> 
         :

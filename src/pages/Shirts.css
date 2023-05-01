@@ -3,12 +3,19 @@
   height: auto;
 }
 
+.sub-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
 .department-page {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr) ) ;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr) ) ;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .product-card {
@@ -21,11 +28,17 @@
 .product-image {
   height: 500px;
   width: 360px;
+  object-fit: cover;
 }
 
 .close-icon {
   position: absolute;
   right: 1%;
+  cursor: pointer;
+}
+
+.close-icon:hover {
+  color: red;
 }
 
 .adjust-item {
@@ -33,5 +46,18 @@
   width: 100%;
   height: auto;
   align-items: center;
+  justify-content: space-around;
+}
+
+.increment {
+  border: 1px solid black;
+  height: 30px;
+  width: 30px;
+  display: flex;
   justify-content: center;
+}
+
+.increment:hover {
+  background-color: rgba(128, 128, 128, 0.281);
+  cursor: pointer;
 }
