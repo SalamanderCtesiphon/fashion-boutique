@@ -11,7 +11,7 @@ button {
   border: white;
   border-radius: 20%;
   padding: 6px;
-  background-color: white;
+  background-color: rgba(227, 226, 226, 0.188);
 }
 
 button:hover {
@@ -21,6 +21,7 @@ button:hover {
 
 input {
   border: white;
+  background-color: rgba(235, 235, 235, 0.188);
 }
 
 form {
@@ -40,6 +41,7 @@ form {
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: rgba(128, 128, 128, 0.188);
 }
 
 @media (max-width: 700px) {
@@ -102,3 +104,4 @@ form {
   flex-direction: column;
   justify-content: center;
 }
+

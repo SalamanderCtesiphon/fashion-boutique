@@ -1,0 +1,66 @@
+.category-page {
+  height: 87vh;
+}
+
+.category-images {
+  height: 500px; 
+  width: 300px; 
+  background-size: cover;
+}
+
+#shirts {
+  background-image: url("../images/nimble-made-hMMXhKSZk7k-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 300px;
+}
+
+#pants {
+  background-image: url('../images/lan-deng-quddu_dZKkQ-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 300px;
+}
+
+#shoes {
+  background-image: url('../images/riyan-ong-j1PxAa2U-T4-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 300px;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: auto;
+  border: 1px solid rgba(128, 128, 128, 0.452);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+@media (max-width: 700px) {
+  .category-card {
+    height: 20vh;
+    justify-content: space-between;
+  }
+}
+
+.category-display {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10vh;
+  min-height: 60vh;
+}
+
+
+@media (max-width: 700px) {
+  .category-display {
+    display: flex;
+    flex-direction: column;
+  }
+}
