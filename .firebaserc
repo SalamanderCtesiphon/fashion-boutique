@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "e-commerce-clothing-store",
+    "deploy": "e-commerce-clothing-store"
+  },
+  "targets": {},
+  "etags": {}
+}
