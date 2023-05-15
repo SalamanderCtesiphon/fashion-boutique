@@ -47,6 +47,12 @@
   margin-right: 50px;
 }
 
+@media (max-width: 500px) {
+  .checkout-image {
+    display: none;
+  }
+}
+
 .cc-sub-section {
   height: auto;
   width: 150px;
