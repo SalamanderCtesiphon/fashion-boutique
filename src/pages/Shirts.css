@@ -23,6 +23,7 @@
   border: 1px solid gray;
   padding: 10px;
   border-radius: 10px;
+  width: fit-content;
 }
 
 .product-image {
