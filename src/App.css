@@ -16,6 +16,12 @@
   position: relative;
 }
 
+@media (max-width: 700px) {
+  #search{
+    display: none;
+  }
+}
+
 .drop-down {
   position: absolute;
   top: 100%;
@@ -144,7 +150,7 @@ input {
   font-size: 30px;
   color: black;
   border: 2px solid black;
-  padding: 30px;
+  padding: 10px;
   border-radius: 20px;
 }
 
