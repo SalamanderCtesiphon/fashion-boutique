@@ -23,12 +23,14 @@
   border: 1px solid gray;
   padding: 10px;
   border-radius: 10px;
-  width: fit-content;
+  width: 30vw;
+  min-width: 280px;
 }
 
 .product-image {
   height: 500px;
-  width: 360px;
+  width: 28vw;
+  min-width: 260px;
   object-fit: cover;
 }
 
