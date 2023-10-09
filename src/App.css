@@ -233,3 +233,13 @@ ul {
   height: 100px;
   width: auto;
 }
+
+#link-back {
+  text-decoration: none;
+  color: #FFC700;
+}
+
+.page-head {
+  width: 100%;
+  align-items: center;
+}

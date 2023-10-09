@@ -48,7 +48,7 @@ function CheckoutModal(props) {
         <Modal.Body>
           {productsCount > 0 ?
             <>
-              <h3 className='page-head'><a id="link-back" href='/categories'><Icon path={mdiArrowLeftBold} size={1} />Return to shopping</a></h3>
+              <h3 className='page-head'><a id="link-back" href='/categories'><Icon path={mdiArrowLeftBold} size={1} /> Return to shopping</a></h3>
               {cart.items.map((currentProduct, idx) => (
                 <CartProduct key={idx} id={currentProduct.id} quantity={currentProduct.quantity}></CartProduct>
               ))}
