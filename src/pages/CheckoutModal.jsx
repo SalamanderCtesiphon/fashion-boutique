@@ -5,7 +5,7 @@ function StaticExample() {
   return (
     <div
       className="modal show"
-      style={{ display: 'block', position: 'initial' }}
+      style={{ display: 'hidden', position: 'initial' }}
     >
       <Modal.Dialog>
         <Modal.Header closeButton>

@@ -19,6 +19,7 @@ function App() {
     <div className='App'>
       <CartProvider>
         <NavbarComponent></NavbarComponent>
+        <CheckoutModal />
           <BrowserRouter>
           <Routes>
             <Route index element={<Home />} />
