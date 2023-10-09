@@ -22,10 +22,10 @@ function CheckoutModal() {
   });
 
   let cartTotal = cart.getTotalCost().toFixed(2)
-
+  
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="primary" onClick={handleShow} >
         Add to Cart
       </Button>
 
