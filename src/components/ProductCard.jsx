@@ -27,6 +27,7 @@ function ProductCard(props) {
           </> 
           :
           <>
+            <CheckoutModal />
           </>
         }
       </div>

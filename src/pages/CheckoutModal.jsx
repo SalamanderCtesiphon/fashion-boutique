@@ -34,9 +34,10 @@ function CheckoutModal(props) {
         Add to Cart
       </Button>
       <Modal 
+        className="modal"
         size="lg"
         show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
+        <Modal.Header closeButton >
           <Modal.Title>Check Out</Modal.Title>
         </Modal.Header>
         <Modal.Body>

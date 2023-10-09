@@ -2,6 +2,7 @@ import React, { useContext} from 'react'
 import { CartContext } from '../CartContext'
 import { getProductData } from '../ProductStore'
 
+
 function CartProduct(props) {
   const cart = useContext(CartContext)
   const id = props.id
@@ -24,6 +25,7 @@ function CartProduct(props) {
           <h3>{productData.title.slice(0, 10)}...</h3>
         </div>
         <div className='cc-sub-section-two'>
+          <button onClick={() => cart.addOneToCart(productData.id)}>+</button>
           <p>total:  {quantity}</p>
         </div>
         <div className='cc-sub-section-three'>
