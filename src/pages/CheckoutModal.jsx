@@ -46,17 +46,13 @@ function CheckoutModal(props) {
           <Modal.Title>Check Out</Modal.Title>
         </Modal.Header>
         <Modal.Body>
+          <h3 className='page-head'><a id="link-back" href='/categories'><Icon path=    {mdiArrowLeftBold} size={1} /> Return to shopping</a></h3>
           {productsCount > 0 ?
             <>
-              <h3 className='page-head'><a id="link-back" href='/categories'><Icon path={mdiArrowLeftBold} size={1} /> Return to shopping</a></h3>
-              {cart.items.map((currentProduct, idx) => (
-                <CartProduct key={idx} id={currentProduct.id} quantity={currentProduct.quantity}></CartProduct>
-              ))}
-
-              <h1 className='total'>Total: {USDollar.format(cartTotal)}</h1>
-
-              <div className='buy-btn' onClick={() => alert("we are currently working to implement a payment service")}>
-                Purchase Items!
+              <div className='check-out-card'>
+                {cart.items.map((currentProduct, idx) => (
+                  <CartProduct key={idx} id={currentProduct.id} quantity={currentProduct.quantity}></CartProduct>
+                ))}
               </div>
             </>
             :
@@ -65,6 +61,10 @@ function CheckoutModal(props) {
             <a className="navLinks" href='categories'>Back to Shopping</a>
             </> 
             }
+          <h1 className='total'>Total: {USDollar.format(cartTotal)}</h1>
+          <div className='buy-btn' onClick={() => alert("we are currently working to implement a payment service")}>
+            Purchase Items!
+          </div>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>

@@ -243,3 +243,15 @@ ul {
   width: 100%;
   align-items: center;
 }
+
+.modal-body {
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+}
+
+.check-out-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
