@@ -242,16 +242,30 @@ ul {
 .page-head {
   width: 100%;
   align-items: center;
+  padding: 10px;
 }
 
 .modal-body {
   margin: 0;
   padding: 0;
-  background-color: pink;
 }
 
-.check-out-card {
+.checkout-card {
   display: flex;
-  flex-direction: column;
   width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
 }
+
+.total {
+  padding: 10px;
+}
+
+.buy-btn {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+

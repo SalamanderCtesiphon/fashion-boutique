@@ -21,7 +21,7 @@ function CartProduct(props) {
         <img src={productData.image} alt="product" className='checkout-image'></img>
         <div className='cc-sub-section'>
           <div>Product Name:</div>
-          <h3>{productData.title}</h3>
+          <h3>{productData.title.slice(0, 10)}...</h3>
         </div>
         <div className='cc-sub-section-two'>
           <p>total:  {quantity}</p>

@@ -30,18 +30,12 @@ function CheckoutModal(props) {
 
   return (
     <>
-      
-      {productsCount > 0 ?
-        <></>
-        :
-        <>
-        <Button variant="primary" onClick={handleShow} >
-          Add to Cart
-        </Button>
-        </>
-      }
-
-      <Modal show={show} onHide={handleClose}>
+      <Button variant="primary" onClick={handleShow} >
+        Add to Cart
+      </Button>
+      <Modal 
+        size="lg"
+        show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Check Out</Modal.Title>
         </Modal.Header>
