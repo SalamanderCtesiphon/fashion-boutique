@@ -57,15 +57,15 @@ function CheckoutModal(props) {
             }
           <h1 className='total'>Total: {USDollar.format(cartTotal)}</h1>
           <div className='buy-btn' onClick={() => alert("we are currently working to implement a payment service")}>
-            Purchase Items!
+            
           </div>
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer id='modal-footer'>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
           <Button variant="primary" onClick={handleClose}>
-            Save Changes
+            Purchase Items!
           </Button>
         </Modal.Footer>
       </Modal>

@@ -269,3 +269,6 @@ ul {
   justify-content: center;
 }
 
+#modal-footer {
+  background-color: black;
+}
