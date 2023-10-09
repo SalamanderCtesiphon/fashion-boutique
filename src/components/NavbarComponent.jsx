@@ -26,7 +26,6 @@ function NavbarComponent() {
           <li><a href='/categories'>CPUs</a></li>
           <li><a href='/categories'>GPUs</a></li>
           <li><a href='/categories'>Memory</a></li>
-          <li><a href='/categories'>Sound Cards</a></li>
         </ul>
         <div className='shopping-cart'>
           <a className="navLinks" href='checkout'><Icon path={mdiCart} size={1.2} /></a>

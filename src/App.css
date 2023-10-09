@@ -33,6 +33,7 @@
   width: 1200px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -73,12 +74,13 @@
 }
 
 ul {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
 }
 
 .navLinks li {
+  padding-top: 10px;
   font-size: 20px;
   list-style: none;
 }
