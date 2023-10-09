@@ -44,24 +44,22 @@
 }
 
 .shopping-cart {
-  position: relative;
-  padding-right: 10px;
-  width: 200px;
+  display: flex;
 }
 
 .product-count {
   background-color: red;
   color: white;
   border-radius: 100%;
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
+  padding-bottom: 2px;
+  padding-left: 1px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 3px;
-  position: absolute;
-  top: 0%;
-  right: 30%;
+  justify-content: center;
+  transform: translateY(3px);
+  transform: translateX(-3px);
 }
 
 
@@ -146,6 +144,5 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(188, 187, 187, 0.188);
 }
 
