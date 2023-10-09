@@ -8,7 +8,6 @@ import Home from './pages/Home';
 import Categories from './pages/Categories';
 import Shirts from './pages/Shirts';
 import Shoes from './pages/Shoes';
-import CheckOut from './pages/CheckOut';
 import Footer from './pages/Footer';
 import Motherboards from './pages/Motherboards';
 
@@ -26,7 +25,6 @@ function App() {
             <Route path='categories' element={<Categories />} />
             <Route path='shirts' element={<Shirts />} />
             <Route path='shoes' element={<Shoes />} />
-            <Route path='checkout' element={<CheckOut />} />
           </Routes>
         </BrowserRouter>
       </CartProvider>
