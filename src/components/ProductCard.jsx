@@ -20,7 +20,7 @@ function ProductCard(props) {
       </div>
       <div className='card-container'>
       <p className='product-price'>Price: ${product.price}</p>
-      <div onClick={() => cart.addOneToCart(product.id)} ><CheckoutModal /></div>
+      <div onClick={() => cart.removeOneFromCart(product.id)} ><CheckoutModal /></div>
         
       </div>
     </div>

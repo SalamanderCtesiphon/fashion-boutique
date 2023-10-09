@@ -5,8 +5,9 @@ import { getProductData } from '../ProductStore'
 
 function CartProduct(props) {
   const cart = useContext(CartContext)
+  const id = props.id
   const quantity = props.quantity
-  const productData = getProductData(props.id)
+  const productData = getProductData(id)
 
   let USDollar = new Intl.NumberFormat('en-US', {
     style: 'currency',
@@ -30,7 +31,7 @@ function CartProduct(props) {
           <div>Sub Total:</div>
           <p>{ USDollar.format(subTotal)}</p>
         </div>
-        <button className="dlt-btn" onClick={() => cart.deleteFromCart(cart.id)}>Remove</button>
+        <button className="dlt-btn" onClick={() => cart.deleteFromCart(id)}>Remove</button>
       </div>
     </>
   )
