@@ -21,15 +21,7 @@ function ProductCard(props) {
       <div className='card-container'>
       <p className='product-price'>Price: ${product.price}</p>
       <div onClick={() => cart.addOneToCart(product.id)} ><CheckoutModal /></div>
-        { productQuantity > 0 ?
-          <>
-            <Button onClick={() => cart.removeOneFromCart(product.id)}  >Remove</Button>
-          </> 
-          :
-          <>
-            <CheckoutModal />
-          </>
-        }
+        
       </div>
     </div>
   )
