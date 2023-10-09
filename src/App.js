@@ -2,17 +2,15 @@ import './App.css';
 import NavbarComponent from './components/NavbarComponent';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Cancel from './pages/Cancel';
 import Store from './pages/Store';
-import Success from './pages/Success';
 import CartProvider from './CartContext';
 import Home from './pages/Home';
 import Categories from './pages/Categories';
 import Shirts from './pages/Shirts';
-import Pants from './pages/Pants';
 import Shoes from './pages/Shoes';
 import CheckOut from './pages/CheckOut';
 import Footer from './pages/Footer';
+import Motherboards from './pages/Motherboards';
 
 function App() {
 
@@ -23,12 +21,10 @@ function App() {
           <BrowserRouter>
           <Routes>
             <Route index element={<Home />} />
-            <Route path='success' element={<Success />} />
-            <Route path='cancel' element={<Cancel />} />
             <Route path='home' element={<Store />} />
+            <Route path='motherboards' element={<Motherboards />} />
             <Route path='categories' element={<Categories />} />
             <Route path='shirts' element={<Shirts />} />
-            <Route path='pants' element={<Pants />} />
             <Route path='shoes' element={<Shoes />} />
             <Route path='checkout' element={<CheckOut />} />
           </Routes>

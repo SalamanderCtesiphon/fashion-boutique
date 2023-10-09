@@ -22,11 +22,11 @@ function NavbarComponent() {
       <div className='header'>
         <a className="navLinks title" href='/'>Fashion Apparel</a>
         <ul className='navLinks'>
-          <li>Motherboards</li>
-          <li>CPUs</li>
-          <li>GPUs</li>
-          <li>Memory</li>
-          <li>Sound Cards</li>
+          <li><a href='/motherboards'>Motherboards</a></li>
+          <li><a href='/categories'>CPUs</a></li>
+          <li><a href='/categories'>GPUs</a></li>
+          <li><a href='/categories'>Memory</a></li>
+          <li><a href='/categories'>Sound Cards</a></li>
         </ul>
         <div className='shopping-cart'>
           { productsCount > 0 ? 

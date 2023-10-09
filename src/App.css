@@ -74,7 +74,9 @@
 }
 
 ul {
+  width: 50%;
   display: flex;
+  justify-content: space-between;
 }
 
 .navLinks li {
@@ -82,8 +84,18 @@ ul {
   list-style: none;
 }
 
+.navLinks li a {
+  text-decoration: none;
+  color: #FFC700;
+}
+
+.navLinks li a:hover {
+  text-decoration: none;
+  color: #ffc8007e;
+}
+
 .navLinks:hover {
-  color: gray;
+  color: #ffc8007e;
 }
 
 .home-page {
