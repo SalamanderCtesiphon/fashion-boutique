@@ -1,9 +1,8 @@
-import React, { useContext} from 'react'
-import { CartContext } from '../CartContext'
+import React from 'react'
 import { productsArray } from '../ProductStore'
 
 import ProductCard from '../components/ProductCard'
-import { Col } from 'react-bootstrap'
+
 
 function Motherboards(props) {
   const tempArray = productsArray.filter((product) =>{

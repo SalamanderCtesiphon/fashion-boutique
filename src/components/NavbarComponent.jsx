@@ -9,14 +9,6 @@ function NavbarComponent() {
   const cart = useContext(CartContext)
   const productsCount = cart.items.length
 
-  const [dropDown, setDropDown] = useState({ isHidden: true})
-
-  function toggleIsHidden() {
-    setDropDown({ isHidden: !dropDown.isHidden})
-  }
-
-  const style = { visibility: dropDown.isHidden ? 'hidden' : 'visible' }
-
   return (
     <>
       <div className='header'>
