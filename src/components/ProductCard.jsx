@@ -3,6 +3,7 @@ import { CartContext } from '../CartContext'
 import '../pages/Shirts.css'
 import Icon from '@mdi/react';
 import { mdiClose } from '@mdi/js';
+import CheckoutModal from '../pages/CheckoutModal'
 
 
 
@@ -22,6 +23,7 @@ function ProductCard(props) {
       <div className='card-container'>
       <p className='product-price'>Price: ${product.price}</p>
       <a className='nav-link' href='/checkoutmodal' >Add One to Cart</a>
+      <CheckoutModal />
       {/*   { productQuantity > 0 ?
           <>
             <div className='adjust-item'>
