@@ -20,15 +20,22 @@ function NavbarComponent() {
   return (
     <>
       <div className='header'>
-      <a className="navLinks title" href='/'>Fashion Apparel</a>
-      <div className='shopping-cart'>
-        { productsCount > 0 ? 
-          <div className='product-count'>{productsCount}</div>
-          :
-          <></>
-        }
+        <a className="navLinks title" href='/'>Fashion Apparel</a>
+        <ul className='navLinks'>
+          <li>Motherboards</li>
+          <li>CPUs</li>
+          <li>GPUs</li>
+          <li>Memory</li>
+          <li>Sound Cards</li>
+        </ul>
+        <div className='shopping-cart'>
+          { productsCount > 0 ? 
+            <div className='product-count'>{productsCount}</div>
+            :
+            <></>
+          }
         <a className="navLinks" href='checkout'><Icon path={mdiCart} size={1.5} /></a>
-      </div>
+        </div>
        </div>
     </>
   )

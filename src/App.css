@@ -1,3 +1,8 @@
+* {
+  background-color: #222222;
+  color: #FFC700;
+}
+
 .App {
   background-color: #222222;
   color: #FFC700;
@@ -24,10 +29,9 @@
 
 .header {
   height: auto;
-  width: 100vw;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -67,6 +71,15 @@
   cursor: pointer;
   margin-left: 10px;
   font-size: 26px;
+}
+
+ul {
+  display: flex;
+}
+
+.navLinks li {
+  font-size: 20px;
+  list-style: none;
 }
 
 .navLinks:hover {
