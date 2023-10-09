@@ -17,6 +17,7 @@ import runners from './images/usama-akram-kP6knT7tjn4-unsplash.jpg'
 import joggers from './images/martin-katler-Y4fKN-RlMV4-unsplash.jpg'
 import hightech from './images/eugene-chystiakov-b2uYNpBG7Ho-unsplash.jpg'
 import motherboard from './images/pexels-jeremy-waterhouse-3665443.jpg'
+import msipro from './images/13-144-551-01.jpg'
 
 const productsArray = [
   {
@@ -148,8 +149,15 @@ const productsArray = [
   {
     id: '19',
     title: 'GA-A55M-DS2',
-    price: 610.99,
+    price: 210.99,
     image: motherboard,
+    category: 'motherboards'
+  },
+  {
+    id: '20',
+    title: 'MSI PRO PRO X670-P WIFI DDR5 AM5 AMD Ryzen™ 7000 Series SATA 6Gb/s ATX Motherboards',
+    price: 198.99,
+    image: msipro,
     category: 'motherboards'
   }
 ]
