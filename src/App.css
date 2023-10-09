@@ -1,37 +1,14 @@
 .App {
+  background-color: #222222;
+  color: #FFC700;
   text-align: center;
   min-height: 100vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-#search {
-  border: 2px solid rgba(103, 102, 102, 0.48);
-  border-radius: 15px;
-  padding: 4px;
-  display: flex;
   align-items: center;
-  position: relative;
 }
 
-@media (max-width: 700px) {
-  #search{
-    display: none;
-  }
-}
-
-.drop-down {
-  position: absolute;
-  top: 100%;
-  right: 24%;
-  flex-direction: column;
-  border: 1px solid black;
-  border-radius: 10px;
-  background-color: white;
-  display: flex;
-}
 
 .list-item {
   text-decoration: none;
@@ -45,39 +22,6 @@
   border-radius: 10px;
 }
 
-.search-icon {
-  height: 20px;
-  width: auto;
-  padding-right: 10px;
-}
-
-.list-item:hover {
-  background-color: rgba(128, 128, 128, 0.381);
-  color: black;
-}
-
-.title {
-  padding-left: 10px;
-}
-
-button {
-  border: white;
-  border-radius: 20%;
-  padding: 6px;
-  background-color: rgba(227, 226, 226, 0.188);
-}
-
-button:hover {
-  color: blueviolet;
-  cursor: pointer;
-}
-
-input {
-  border: white;
-  background-color: rgba(235, 235, 235, 0.188);
-}
-
-
 .header {
   height: auto;
   width: 100vw;
@@ -87,7 +31,6 @@ input {
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: rgba(128, 128, 128, 0.188);
 }
 
 @media (max-width: 700px) {
@@ -120,7 +63,7 @@ input {
 
 .navLinks {
   text-decoration: none;
-  color: black;
+  color: #FFC700;
   cursor: pointer;
   margin-left: 10px;
   font-size: 26px;
