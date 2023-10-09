@@ -22,7 +22,6 @@ function ProductCard(props) {
       </div>
       <div className='card-container'>
       <p className='product-price'>Price: ${product.price}</p>
-      <a className='nav-link' href='/checkoutmodal' >Add One to Cart</a>
       <CheckoutModal />
       {/*   { productQuantity > 0 ?
           <>
