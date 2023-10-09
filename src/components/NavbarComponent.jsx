@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { CartContext } from '../CartContext'
 import Icon from '@mdi/react';
 import { mdiCart } from '@mdi/js';
