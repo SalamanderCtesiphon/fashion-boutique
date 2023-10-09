@@ -16,6 +16,7 @@ import classVans from './images/paul-gaudriault-a-QH9MAAVNI-unsplash.jpg'
 import runners from './images/usama-akram-kP6knT7tjn4-unsplash.jpg'
 import joggers from './images/martin-katler-Y4fKN-RlMV4-unsplash.jpg'
 import hightech from './images/eugene-chystiakov-b2uYNpBG7Ho-unsplash.jpg'
+import motherboard from './images/pexels-jeremy-waterhouse-3665443.jpg'
 
 const productsArray = [
   {
@@ -143,6 +144,13 @@ const productsArray = [
     price: 610.99,
     image: hightech,
     category: 'footware'
+  },
+  {
+    id: '19',
+    title: 'GA-A55M-DS2',
+    price: 610.99,
+    image: motherboard,
+    category: 'motherboards'
   }
 ]
 

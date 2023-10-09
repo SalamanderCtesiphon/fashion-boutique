@@ -15,13 +15,8 @@ function ProductCard(props) {
   return (
 
     <div className='product-card'>
-      { productQuantity > 0 ?
-        <Icon className="close-icon" path={mdiClose} size={2} onClick={() => cart.deleteFromCart(product.id)}/>   
-        :
-        <></>
-      }
-      <img src={product.image} alt='product' className='product-image'></img>
       <h3>{product.title}</h3>
+      <img src={product.image} alt='product' className='product-image'></img>
       <p>${product.price}</p>
       { productQuantity > 0 ?
         <>
@@ -37,6 +32,11 @@ function ProductCard(props) {
         <>
          <div className='nav-link' onClick={() => cart.addOneToCart(product.id)} >Add One to Cart</div>
         </>
+      }
+      { productQuantity > 0 ?
+        <Icon className="close-icon" path={mdiClose} size={2} onClick={() => cart.deleteFromCart(product.id)}/>   
+        :
+        <></>
       }
     </div>
   )

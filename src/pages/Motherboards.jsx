@@ -1,8 +1,29 @@
-import React from 'react'
+import React, { useContext} from 'react'
+import { CartContext } from '../CartContext'
+import { productsArray } from '../ProductStore'
 
-function Motherboards() {
+import ProductCard from '../components/ProductCard'
+import { Col } from 'react-bootstrap'
+
+function Motherboards(props) {
+  const tempArray = productsArray.filter((product) =>{
+    return product.category === "motherboards"
+  })
+
+
   return (
-    <div>Motherboards</div>
+    <>
+      <section className='category-page'>
+        <h1 align='center' className='dep-title' >Motherboards</h1>
+        <div className='prod-cards'>
+          {tempArray.map((product, idx) => (
+            <div key={idx}>
+              <ProductCard product={product}></ProductCard>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
   )
 }
 
