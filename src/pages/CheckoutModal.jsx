@@ -7,13 +7,11 @@ import Modal from 'react-bootstrap/Modal';
 import Icon from '@mdi/react';
 import { mdiArrowLeftBold } from '@mdi/js';
 
-function CheckoutModal() {
+
+function CheckoutModal(props) {
   const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
   const cart = useContext(CartContext)
+  const product = props.product
   const productsCount = cart.items.length
 
   let USDollar = new Intl.NumberFormat('en-US', {
@@ -22,12 +20,27 @@ function CheckoutModal() {
   });
 
   let cartTotal = cart.getTotalCost().toFixed(2)
-  
+
+
+  const handleClose = () => {
+    setShow(false)
+  };
+  const handleShow = () => {
+    setShow(true) 
+  };
+
   return (
     <>
-      <Button variant="primary" onClick={handleShow} >
-        Add to Cart
-      </Button>
+      
+      {productsCount > 0 ?
+        <></>
+        :
+        <>
+        <Button variant="primary" onClick={handleShow} >
+          Add to Cart
+        </Button>
+        </>
+      }
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>

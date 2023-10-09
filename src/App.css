@@ -228,3 +228,8 @@ ul {
   background-color: rgba(128, 128, 128, 0.281);
   cursor: pointer;
 }
+
+.checkout-image {
+  height: 100px;
+  width: auto;
+}

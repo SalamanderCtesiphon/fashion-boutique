@@ -1,8 +1,6 @@
 import React, { useContext} from 'react'
 import { CartContext } from '../CartContext'
 import '../pages/Shirts.css'
-import Icon from '@mdi/react';
-import { mdiClose } from '@mdi/js';
 import CheckoutModal from '../pages/CheckoutModal'
 import Button from 'react-bootstrap/Button';
 
@@ -22,13 +20,14 @@ function ProductCard(props) {
       </div>
       <div className='card-container'>
       <p className='product-price'>Price: ${product.price}</p>
-      
+      <div onClick={() => cart.addOneToCart(product.id)} ><CheckoutModal /></div>
         { productQuantity > 0 ?
           <>
             <Button onClick={() => cart.removeOneFromCart(product.id)}  >Remove</Button>
           </> 
           :
-          <div onClick={() => cart.addOneToCart(product.id)} ><CheckoutModal /></div>
+          <>
+          </>
         }
       </div>
     </div>
