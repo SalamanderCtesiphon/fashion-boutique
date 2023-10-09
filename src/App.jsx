@@ -11,6 +11,7 @@ import Shoes from './pages/Shoes';
 import CheckOut from './pages/CheckOut';
 import Footer from './pages/Footer';
 import Motherboards from './pages/Motherboards';
+import CheckoutModal from './pages/CheckoutModal'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
             <Route path='categories' element={<Categories />} />
             <Route path='shirts' element={<Shirts />} />
             <Route path='shoes' element={<Shoes />} />
+            <Route path='checkoutmodal' element={<CheckoutModal />} />
             <Route path='checkout' element={<CheckOut />} />
           </Routes>
         </BrowserRouter>

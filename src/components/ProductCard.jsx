@@ -21,7 +21,8 @@ function ProductCard(props) {
       </div>
       <div className='card-container'>
       <p className='product-price'>Price: ${product.price}</p>
-        { productQuantity > 0 ?
+      <a className='nav-link' href='/checkoutmodal' >Add One to Cart</a>
+      {/*   { productQuantity > 0 ?
           <>
             <div className='adjust-item'>
               <div className='increment' onClick={() => cart.removeOneFromCart(product.id)} >-</div>
@@ -35,7 +36,7 @@ function ProductCard(props) {
           <>
           <div className='nav-link' onClick={() => cart.addOneToCart(product.id)} >Add One to Cart</div>
           </>
-        }
+        } */}
       </div>
     
       { productQuantity > 0 ?
