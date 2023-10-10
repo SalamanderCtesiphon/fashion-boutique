@@ -1,6 +1,7 @@
 import motherboard from './images/pexels-jeremy-waterhouse-3665443.jpg'
 import msipro from './images/13-144-551-01.jpg'
 import msipro1 from './images/13-162-131-06.jpg'
+import cpu1 from './images/19-113-793-03.png'
 
 const productsArray = [
   {
@@ -23,6 +24,13 @@ const productsArray = [
     price: 124.99,
     image: msipro1,
     category: 'motherboards'
+  },
+  {
+    id: '22',
+    title: 'AMD Ryzen 7 7800X3D - Ryzen 7 7000 Series 8-Core 4.2 GHz Socket AM5 120W AMD Radeon',
+    price: 399.00,
+    image: cpu1,
+    category: 'cpus'
   }
 ]
 

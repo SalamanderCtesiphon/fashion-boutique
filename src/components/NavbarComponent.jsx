@@ -17,7 +17,7 @@ function NavbarComponent() {
         <a className="navLinks title" href='/'>ElectroDepot</a>
         <ul className='navLinks'>
           <li><a href='/motherboards'>Motherboards</a></li>
-          <li><a href='/categories'>CPUs</a></li>
+          <li><a href='/cpus'>CPUs</a></li>
           <li><a href='/categories'>GPUs</a></li>
           <li><a href='/categories'>Memory</a></li>
         </ul>
