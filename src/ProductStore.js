@@ -4,6 +4,9 @@ import msipro1 from './images/13-162-131-06.jpg'
 import cpu1 from './images/19-113-793-03.png'
 import cpu2 from './images/4dce83bee437f0f48a8d06d9b794bc889b74ee23c9480a3d203f896c356bfd52.jpg'
 import cpu3 from './images/19-113-763-10.jpg'
+import gpu1 from './images/gpu1.jpg'
+import gpu2 from './images/gpu2.jpg'
+import gpu3 from './images/gpu3.jpg'
 
 const productsArray = [
   {
@@ -47,6 +50,27 @@ const productsArray = [
     price: 5799.99,
     image: cpu3,
     category: 'cpus'
+  },
+  {
+    id: '25',
+    title: 'GIGABYTE Gaming GeForce RTX 4090 24GB GDDR6X PCI Express 4.0 x16 ATX Video Card',
+    price: 1699.99,
+    image: gpu1,
+    category: 'gpus'
+  },
+  {
+    id: '25',
+    title: 'MSI Ventus GeForce RTX 4080 16GB GDDR6X PCI Express 4.0 Video Card RTX 4080 16GB VENTUS 3X OC',
+    price: 1774.99,
+    image: gpu2,
+    category: 'gpus'
+  },
+  {
+    id: '25',
+    title: 'ASRock OC Formula Radeon RX 6900 XT 16GB GDDR6 PCI Express 4.0 ATX Video Card RX6900XT OCF 16G',
+    price: 639.99,
+    image: gpu3,
+    category: 'gpus'
   }
 ]
 
