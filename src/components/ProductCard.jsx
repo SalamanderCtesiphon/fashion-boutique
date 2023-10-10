@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CartContext } from '../CartContext'
 
 import '../pages/Shirts.css'
 import CheckoutModal from '../pages/CheckoutModal'
 
 function ProductCard(props) {
-  const product = props.product
+  const cart = useContext(CartContext)
+  const product = props.product 
+  const id = props.id
 
   return (
 
@@ -16,6 +19,9 @@ function ProductCard(props) {
       <div className='card-container'>
       <p className='product-price'>Price: ${product.price}</p>
       <CheckoutModal />
+      <button onClick={() => cart.addOneToCart(id)} >
+        Add one to Cart
+      </button>
         
       </div>
     </div>

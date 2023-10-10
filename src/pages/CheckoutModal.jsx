@@ -31,13 +31,8 @@ function CheckoutModal(props) {
   
 
   return (
-    <>
-      <div onClick={() => cart.addOneToCart(id)} >
-      <Button variant="primary" onClick={handleShow} >
-        Add to Cart
-      </Button>
-      </div>
-      
+    <> 
+      <button  onClick={handleShow}> Go to Checkout</button>    
       <Modal 
         className="modal"
         size="lg"
