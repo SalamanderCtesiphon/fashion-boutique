@@ -4,8 +4,10 @@ import { CartContext } from '../CartContext'
 import '../pages/Shirts.css'
 
 function ProductCard(props) {
-  const cart = useContext(CartContext)
   const product = props.product 
+  const cart = useContext(CartContext)
+  const productQuantity = cart.getProductQuantity(product.id)
+ 
 
   return (
 
@@ -17,7 +19,7 @@ function ProductCard(props) {
       <div className='card-container'>
       <p className='product-price'>Price: ${product.price}</p>
      
-      <button onClick={() => cart.addOneToCart(props.id)} >
+      <button onClick={() => cart.addOneToCart(product.id)} >
         Add one to Cart
       </button>
         
