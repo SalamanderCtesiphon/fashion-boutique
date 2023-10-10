@@ -4,8 +4,6 @@ import { CartContext } from '../CartContext'
 import CartProduct from '../components/CartProduct'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import Icon from '@mdi/react';
-import { mdiArrowLeftBold } from '@mdi/js';
 
 
 function CheckoutModal(props) {
