@@ -22,6 +22,9 @@ function ProductCard(props) {
       <button onClick={() => cart.addOneToCart(product.id)} >
         Add one to Cart
       </button>
+      <div>In Cart: {productQuantity}</div>
+      <button onClick={() => cart.removeOneFromCart(product.id)}>Remove one</button>
+      <button onClick={() => cart.deleteFromCart(product.id)}>Delete Item</button>
         
       </div>
     </div>
