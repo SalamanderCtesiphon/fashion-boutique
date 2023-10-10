@@ -1,8 +1,6 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../CartContext'
 
-import '../pages/Shirts.css'
-
 function ProductCard(props) {
   const product = props.product 
   const cart = useContext(CartContext)
