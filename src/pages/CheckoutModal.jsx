@@ -45,7 +45,7 @@ function CheckoutModal(props) {
             <>
               <div className='check-out-card'>
                 {cart.items.map((currentProduct, idx) => (
-                  <CartProduct key={idx} id={currentProduct.id} quantity={currentProduct.quantity}></CartProduct>
+                  <CartProduct key={idx} id={currentProduct.id} quantity={currentProduct.quantity} currentProduct={currentProduct}></CartProduct>
                 ))}
               </div>
             </>
