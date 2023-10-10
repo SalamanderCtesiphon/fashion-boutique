@@ -18,7 +18,7 @@ function NavbarComponent() {
         <ul className='navLinks'>
           <li><a href='/motherboards'>Motherboards</a></li>
           <li><a href='/cpus'>CPUs</a></li>
-          <li><a href='/categories'>GPUs</a></li>
+          <li><a href='/gpus'>GPUs</a></li>
           <li><a href='/categories'>Memory</a></li>
         </ul>
         <div className='shopping-cart'>

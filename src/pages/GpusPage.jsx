@@ -3,14 +3,14 @@ import { productsArray } from '../ProductStore'
 
 import ProductCard from '../components/ProductCard'
 
-function CpusPage(props) {
+function GpusPage(props) {
   const tempArray = productsArray.filter((product) =>{
-    return product.category === "cpus"
+    return product.category === "gpus"
   })
   return (
     <>
       <section className='category-page'>
-        <h1 align='center' className='dep-title' >Proccessors</h1>
+        <h1 align='center' className='dep-title' >Video Cards</h1>
         <div className='prod-cards'>
           {tempArray.map((product, idx) => (
             <div key={idx}>
@@ -23,4 +23,4 @@ function CpusPage(props) {
   )
 }
 
-export default CpusPage
+export default GpusPage

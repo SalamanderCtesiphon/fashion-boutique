@@ -16,7 +16,7 @@ function Categories() {
         </div>
         <div className='category-card'>
           <div id='shoes'></div>
-          <a href='/shoes' className='nav-link'>GPUs</a>
+          <a href='/gpus' className='nav-link'>GPUs</a>
         </div>
         <div className='category-card'>
           <div id='memory'></div>

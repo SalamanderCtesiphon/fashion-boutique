@@ -9,6 +9,7 @@ import Footer from './pages/Footer';
 import Motherboards from './pages/Motherboards';
 import Store from './pages/Store'
 import CpusPage from './pages/CpusPage';
+import GpusPage from './pages/GpusPage';
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
             <Route path='motherboards' element={<Motherboards />} />
             <Route path='cpus' element={<CpusPage />} />
             <Route path='categories' element={<Categories />} />
-            <Route path='/' element={<Store />} />
+            <Route path='gpus' element={<GpusPage />} />
           </Routes>
         </BrowserRouter>
       </CartProvider>
