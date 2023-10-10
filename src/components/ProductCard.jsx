@@ -2,9 +2,6 @@ import React, { useContext} from 'react'
 import { CartContext } from '../CartContext'
 import '../pages/Shirts.css'
 import CheckoutModal from '../pages/CheckoutModal'
-import Button from 'react-bootstrap/Button';
-
-
 
 function ProductCard(props) {
   const product = props.product
@@ -20,7 +17,7 @@ function ProductCard(props) {
       </div>
       <div className='card-container'>
       <p className='product-price'>Price: ${product.price}</p>
-      <div onClick={() => cart.removeOneFromCart(product.id)} ><CheckoutModal /></div>
+      <div onClick={() => cart.addOneToCart(product.id)} ><CheckoutModal /></div>
         
       </div>
     </div>
