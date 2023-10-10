@@ -2,6 +2,8 @@ import motherboard from './images/pexels-jeremy-waterhouse-3665443.jpg'
 import msipro from './images/13-144-551-01.jpg'
 import msipro1 from './images/13-162-131-06.jpg'
 import cpu1 from './images/19-113-793-03.png'
+import cpu2 from './images/4dce83bee437f0f48a8d06d9b794bc889b74ee23c9480a3d203f896c356bfd52.jpg'
+import cpu3 from './images/19-113-763-10.jpg'
 
 const productsArray = [
   {
@@ -30,6 +32,20 @@ const productsArray = [
     title: 'AMD Ryzen 7 7800X3D - Ryzen 7 7000 Series 8-Core 4.2 GHz Socket AM5 120W AMD Radeon',
     price: 399.00,
     image: cpu1,
+    category: 'cpus'
+  },
+  {
+    id: '23',
+    title: 'Intel Core i7-12700KF - Core i7 12th Gen Alder Lake 12-Core (8P+4E) 3.6 GHz LGA 1700 125W',
+    price: 289.99,
+    image: cpu2,
+    category: 'cpus'
+  },
+  {
+    id: '24',
+    title: 'AMD Ryzen Threadripper PRO 5995WX - Ryzen Threadripper PRO Chagall PRO (Zen 3) 64-Core 2.7 GHz Socket sWRX8 280W ',
+    price: 5799.99,
+    image: cpu3,
     category: 'cpus'
   }
 ]
