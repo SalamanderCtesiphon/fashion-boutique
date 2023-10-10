@@ -4,6 +4,8 @@ import { CartContext } from '../CartContext'
 import CartProduct from '../components/CartProduct'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import Icon from '@mdi/react';
+import { mdiCart } from '@mdi/js';
 
 
 function CheckoutModal(props) {
@@ -29,7 +31,7 @@ function CheckoutModal(props) {
 
   return (
     <> 
-      <button  onClick={handleShow}> Go to Checkout</button>    
+      <button  onClick={handleShow} id='shopping-cart'><Icon path={mdiCart} size={1.2} /></button>    
       <Modal 
         className="modal"
         size="lg"

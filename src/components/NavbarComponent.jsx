@@ -1,8 +1,5 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../CartContext'
-import Icon from '@mdi/react';
-import { mdiCart } from '@mdi/js';
-
 import CheckoutModal from '../pages/CheckoutModal'
 
 
@@ -22,13 +19,12 @@ function NavbarComponent() {
           <li><a href='/memory'>Memory</a></li>
         </ul>
         <div className='shopping-cart'>
-          <a className="navLinks" href='checkout'><Icon path={mdiCart} size={1.2} /></a>
+          <CheckoutModal />
           { productsCount > 0 ? 
             <div className='product-count'>{productsCount}</div>
             :
             <></>
           }
-           <CheckoutModal />
         </div>
        </div>
     </>
