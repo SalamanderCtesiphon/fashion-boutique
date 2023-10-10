@@ -2,14 +2,12 @@ import './App.css';
 import NavbarComponent from './components/NavbarComponent';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Store from './pages/Store';
 import CartProvider from './CartContext';
 import Home from './pages/Home';
 import Categories from './pages/Categories';
-import Shirts from './pages/Shirts';
-import Shoes from './pages/Shoes';
 import Footer from './pages/Footer';
 import Motherboards from './pages/Motherboards';
+import Store from './pages/Store'
 
 function App() {
 
@@ -23,8 +21,8 @@ function App() {
             <Route path='home' element={<Store />} />
             <Route path='motherboards' element={<Motherboards />} />
             <Route path='categories' element={<Categories />} />
-            <Route path='shirts' element={<Shirts />} />
-            <Route path='shoes' element={<Shoes />} />
+            <Route path='/' element={<Store />} />
+            <Route path='/' element={<Store />} />
           </Routes>
         </BrowserRouter>
       </CartProvider>
