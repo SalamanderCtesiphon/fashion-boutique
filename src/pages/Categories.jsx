@@ -20,7 +20,7 @@ function Categories() {
         </div>
         <div className='category-card'>
           <div id='memory'></div>
-          <a href='/shoes' className='nav-link'>Memory</a>
+          <a href='/memory' className='nav-link'>Memory</a>
         </div>
       </div>
     </div>

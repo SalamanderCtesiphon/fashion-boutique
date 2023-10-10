@@ -10,6 +10,7 @@ import Motherboards from './pages/Motherboards';
 import Store from './pages/Store'
 import CpusPage from './pages/CpusPage';
 import GpusPage from './pages/GpusPage';
+import MemoryPage from './pages/MemoryPage';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
             <Route path='cpus' element={<CpusPage />} />
             <Route path='categories' element={<Categories />} />
             <Route path='gpus' element={<GpusPage />} />
+            <Route path='memory' element={<MemoryPage />} />
           </Routes>
         </BrowserRouter>
       </CartProvider>

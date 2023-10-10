@@ -19,7 +19,7 @@ function NavbarComponent() {
           <li><a href='/motherboards'>Motherboards</a></li>
           <li><a href='/cpus'>CPUs</a></li>
           <li><a href='/gpus'>GPUs</a></li>
-          <li><a href='/categories'>Memory</a></li>
+          <li><a href='/memory'>Memory</a></li>
         </ul>
         <div className='shopping-cart'>
           <a className="navLinks" href='checkout'><Icon path={mdiCart} size={1.2} /></a>
