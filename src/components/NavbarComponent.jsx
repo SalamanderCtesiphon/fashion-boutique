@@ -3,6 +3,8 @@ import { CartContext } from '../CartContext'
 import Icon from '@mdi/react';
 import { mdiCart } from '@mdi/js';
 
+import CheckoutModal from '../pages/CheckoutModal'
+
 
 
 function NavbarComponent() {
@@ -26,6 +28,7 @@ function NavbarComponent() {
             :
             <></>
           }
+           <CheckoutModal />
         </div>
        </div>
     </>
