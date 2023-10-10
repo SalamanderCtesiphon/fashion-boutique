@@ -1,12 +1,10 @@
-import React, { useContext} from 'react'
-import { CartContext } from '../CartContext'
+import React from 'react'
+
 import '../pages/Shirts.css'
 import CheckoutModal from '../pages/CheckoutModal'
 
 function ProductCard(props) {
   const product = props.product
-  const cart = useContext(CartContext)
-  const productQuantity = cart.getProductQuantity(product.id)
 
   return (
 
@@ -17,7 +15,7 @@ function ProductCard(props) {
       </div>
       <div className='card-container'>
       <p className='product-price'>Price: ${product.price}</p>
-      <div onClick={() => cart.addOneToCart(product.id)} ><CheckoutModal /></div>
+      <CheckoutModal />
         
       </div>
     </div>

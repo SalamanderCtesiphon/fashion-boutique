@@ -11,6 +11,7 @@ import { mdiArrowLeftBold } from '@mdi/js';
 function CheckoutModal(props) {
   const [show, setShow] = useState(false);
   const cart = useContext(CartContext)
+  const id = props.id
   const productsCount = cart.items.length
 
   let USDollar = new Intl.NumberFormat('en-US', {
@@ -27,12 +28,16 @@ function CheckoutModal(props) {
   const handleShow = () => {
     setShow(true) 
   };
+  
 
   return (
     <>
+      <div onClick={() => cart.addOneToCart(id)} >
       <Button variant="primary" onClick={handleShow} >
         Add to Cart
       </Button>
+      </div>
+      
       <Modal 
         className="modal"
         size="lg"

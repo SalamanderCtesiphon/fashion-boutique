@@ -31,7 +31,7 @@ function CartProduct(props) {
           <div>Sub Total:</div>
           <p>{ USDollar.format(subTotal)}</p>
         </div>
-        <button className="dlt-btn" onClick={() => cart.deleteFromCart(id)}>Remove</button>
+        <button className="dlt-btn" onClick={() => cart.deleteFromCart(productData.id)}>Remove</button>
       </div>
     </>
   )
