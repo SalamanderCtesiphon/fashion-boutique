@@ -7,6 +7,9 @@ import cpu3 from './images/19-113-763-10.jpg'
 import gpu1 from './images/gpu1.jpg'
 import gpu2 from './images/gpu2.jpg'
 import gpu3 from './images/gpu3.jpg'
+import mem1 from './images/mem1.jpg'
+import mem2 from './images/mem2.jpg'
+import mem3 from './images/mem3.jpg'
 
 const productsArray = [
   {
@@ -59,18 +62,39 @@ const productsArray = [
     category: 'gpus'
   },
   {
-    id: '25',
+    id: '26',
     title: 'MSI Ventus GeForce RTX 4080 16GB GDDR6X PCI Express 4.0 Video Card RTX 4080 16GB VENTUS 3X OC',
     price: 1774.99,
     image: gpu2,
     category: 'gpus'
   },
   {
-    id: '25',
+    id: '27',
     title: 'ASRock OC Formula Radeon RX 6900 XT 16GB GDDR6 PCI Express 4.0 ATX Video Card RX6900XT OCF 16G',
     price: 639.99,
     image: gpu3,
     category: 'gpus'
+  },
+  {
+    id: '28',
+    title: 'CORSAIR Vengeance RGB 32GB (2 x 16GB) 288-Pin PC RAM DDR5 6000 (PC5 48000) Desktop',
+    price: 119.99,
+    image: mem1,
+    category: 'memory'
+  },
+  {
+    id: '29',
+    title: 'CORSAIR Vengeance 32GB (2 x 16GB) 288-Pin PC RAM DDR5 6000 (PC5 48000) Desktop',
+    price: 87.99,
+    image: mem2,
+    category: 'memory'
+  },
+  {
+    id: '30',
+    title: 'G.SKILL Ripjaws V Series 16GB (2 x 8GB) 288-Pin PC RAM DDR4 3200 (PC4 25600) Desktop ',
+    price: 39.99,
+    image: mem3,
+    category: 'memory'
   }
 ]
 
