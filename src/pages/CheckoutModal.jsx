@@ -35,12 +35,13 @@ function CheckoutModal(props) {
       <Modal 
         className="modal"
         size="lg"
-        show={show} onHide={handleClose}>
+        show={show} 
+        onHide={handleClose}
+      >
         <Modal.Header closeButton>
           <Modal.Title>Check Out</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h3 className='page-head'><a id="link-back" href='/categories'><Icon path=    {mdiArrowLeftBold} size={1} /> Return to shopping</a></h3>
           {productsCount > 0 ?
             <>
               <div className='check-out-card'>
