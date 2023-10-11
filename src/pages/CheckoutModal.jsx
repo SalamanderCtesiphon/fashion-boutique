@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { CartContext } from '../CartContext'
 import CartProduct from '../components/CartProduct'
 import Button from 'react-bootstrap/Button';
@@ -57,9 +56,6 @@ function CheckoutModal(props) {
             </> 
             }
           <h1 className='total'>Total: {USDollar.format(cartTotal)}</h1>
-          <div className='buy-btn' onClick={() => alert("we are currently working to implement a payment service")}>
-            
-          </div>
         </Modal.Body>
         <Modal.Footer id='modal-footer'>
           <Button variant="secondary" onClick={handleClose}>
