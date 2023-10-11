@@ -96,6 +96,9 @@ export function CartProvider({children}) {
             const productData = getProductData(cartItem.id);
             return totalCost += (productData.price * cartItem.quantity);
         });
+        if(totalCost === undefined) {
+            return
+        }
         return totalCost;
     }
 
